@@ -15,6 +15,18 @@ header, footer{
     text-align: center;
 }
 
+header ul{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+
+    padding-right: 1em;
+}
+
 main{
     border: 2px solid blue;
     border-radius: 10px;
@@ -26,6 +38,10 @@ main{
 
 #green-background{
     background-color: rgb(157, 212, 157);
+}
+
+form textarea{
+    text-align: left;
 }
 
 @media screen and (max-width: 320px){
