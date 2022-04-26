@@ -7,22 +7,12 @@ body{
 
     line-height: 2em;
     border-width: 60%;
-
-    margin: 1%;
-    padding: 10px,5px
-}
-
-.navigation li{
-    list-style-type: none;
-    display:inline;
-    padding-right: 10px;
 }
 
 header, footer{
     border: 2px solid rgb(170, 0, 255);
     border-radius: 10px;
     text-align: center;
-    margin: 10px 0px;
 }
 
 main{
@@ -36,4 +26,15 @@ main{
 
 #green-background{
     background-color: rgb(157, 212, 157);
+}
+
+@media screen and (max-width: 320px){
+    body{
+        background-color:blue;
+        font-size: 0.75rem;
+    }
+
+    img{
+        color: red;
+    }
 }
