@@ -26,15 +26,56 @@
     </header>
 
     <main>
-        <h1>Contact Form</h1>
-        <p>We would love to hear what you think.</p>
+        <h1>Upload your recipe</h1>
+        <p>This was all a trick to get you to give me your recipes. I have no imagination when it comes to cooking.</p>
 
-        <form name="contact" method="post" data-netlify="true">
-            <input type="text" value="Enter your name"/>
-            <input type="email" value="example@email.com"/>
-            <textarea rows="10" cols="30">Enter your comments here.</textarea>
-            <input type="submit"/>
+        <form name="Recipe" method="post" data-netlify="true">
+            <h2>Who are you?</h2>
+            <p>
+                <label>First Name <input type="text" name="name" placeholder="john doe"/></label>
+                <label>Last Name <input type="text" name="name"/></label>
+            </p>
+            <p>
+                <label>Your Email <input type="text" name="email"/></label>
+                <label>Your Phone Number <input type="text" name="Phone"/></label>
+            </p>
+            <p>
+                <label>Your Age <input type="text" name="age"/></label>
+                <label>Birthday <input type="date" name="date"/></label>
+            </p>
+            <p>
+                <label>Gender </label><br>
+                <label><input type="radio" id="Female" name="gender" value="Female"> Female</label><br>    
+                <label><input type="radio" id="Male" name="gender" value="Male"> Male</label><br>        
+                <label><input type="radio" id="None" name="gender" value="None of your business"> None of your business</label><br>            
+            </p>
+
+            <h2>In regards to cooking</h2>
+            <p>
+                <label>Favourite Cuisine</label><br>
+                <label><input type="checkbox" id="Dutch" name="cuisine"/> Dutch</label>
+                <label><input type="checkbox" id="Turkish" name="cuisine"/> Turkish</label>
+                <label><input type="checkbox" id="Indonesian" name="cuisine"/> Indonesian</label>
+                <label><input type="checkbox" id="Morrocan" name="cuisine"/> Morrocan</label>                    
+            </p>
+            <p>
+                <label>Apron Colour <input type="color" name="colour"/></label>
+            </p>
+
+            <p>
+                <label>Your origin story</label><br>
+                <textarea rows="10" cols="60" name="story" placeholder="It all started when I was born..."></textarea>
+            </p>
+            <p>
+                <label>Upload your best recipe <input type="file" /></label>
+                <label>Link to your website <input type="url" /></label>
+            </p>
+            <p>
+                <input type="reset"/>
+                <input type="submit"/>
+            </p>
         </form>
+      
     </main>
 
     <footer>
@@ -43,3 +84,18 @@
 </body>
 
 </html>
+
+  <!--
+        <form name="contact" data-netlify="true">
+            <input type="text" name="name"/>
+                        <p>
+                <label> your email <input type="text" name="email"/></label>
+            </p>
+            <p>
+                <label> your comment <textarea name="comment" rows="10" cols="30">Enter your comments here.</textarea></label>
+            </p>
+            <p>
+                <input type="submit"/>
+            </p>           
+        </form>
+        -->
