@@ -40,10 +40,6 @@ main{
     background-color: rgb(157, 212, 157);
 }
 
-form textarea{
-    text-align: left;
-}
-
 @media screen and (max-width: 320px){
     body{
         background-color:blue;
